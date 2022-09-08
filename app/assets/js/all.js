@@ -6,15 +6,6 @@ if (elem){
   }); 
 }
 
-// 課程列表的 btn
-// if (elem){
-//   const courseFilterSwiper = new Swiper('.course-filter-swiper', {
-//     slidesPerView: 'auto',
-//     spaceBetween : 16,
-//     freeMode: true,
-//   });
-// }
-
   const recommendSwiper = new Swiper('.recommend-swiper', {
     effect: 'fade',
     autoplay: {
@@ -56,7 +47,16 @@ if (elem){
     },
   });
 
-
+  const courseFilterSwiper = new Swiper('.course-filter-swiper', {
+    slidesPerView: 'auto',
+    spaceBetween : 16,
+    freeMode: true,
+    breakpoints: {
+      1440: {
+        slidesPerView: 6,
+      }
+    }
+  });
 
 
 
