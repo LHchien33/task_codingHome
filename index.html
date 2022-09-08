@@ -1,9 +1,96 @@
----
-title: 首頁 - Coding Home 程式家教
-layout: ./app/ejs/index.ejs
-engine: ejs
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首頁 - Coding Home 程式家教</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- css style -->
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <header class="bg-light nav-decorBorder fixed-top w-100">
+      <nav class="navbar navbar-expand-md justify-content-between p-0">
+        <div class="container">
+          <!-- logo -->
+          <h1 class="overflow-hidden fs-1" style="max-width: 175px;">
+            <a class="d-block py-5 text-nowrap text-decoration-none" href="./index.html">
+              <img class="d-md-inline-block d-none" src="./assets/images/logo.svg" alt="big logo" height="42px">
+              <img class="d-inline-block d-md-none" src="./assets/images/logo2.svg" alt="small logo" height="24px">
+              <span class="d-inline-block text-indent-101 fs-2">Coding Home 程式家教</span>
+            </a>
+          </h1>
+          <!-- toggle btn -->
+          <a class="d-block d-md-none text-decoration-none" data-bs-toggle="collapse" data-bs-target="#collapseNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="material-icons text-primary align-top">drag_handle</span>
+          </a>
+          <!-- collapse nav -->
+          <div class="collapse navbar-collapse bg-light w-100 position-absolute position-md-unset top-100 start-0 justify-content-end z-index-10" id="collapseNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link d-block text-center fs-4 px-5 py-4 text-white active" aria-current="page" href="./index.html">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-block text-center fs-4 px-5 py-4 text-white" href="./courses.html">課程介紹</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-block text-center fs-4 px-5 py-4 text-white d-md-flex align-items-center" href="#login" data-bs-toggle="modal">
+                  <span class="material-icons fs-5 me-2 align-middle">account_circle</span>
+                  登入
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- login modal -->
+    <div class="modal fade" id="login" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered" style="max-width: 636px;">
+        <div class="modal-content bg-light border border-white rounded-0">
+          <div class="modal-header py-4 px-5 py-lg-5 rounded-0 border-bottom-0 d-block position-relative">
+            <button class="bg-light border-0 d-block text-end w-100 w-lg-auto position-lg-absolute end-0 top-50 translate-middle-lg" type="button" data-bs-dismiss="modal" aria-label="Close">
+              <span class="material-icons text-white bg-light align-top">close</span>
+            </button>
+            <h2 class="modal-title text-white text-center fs-7 fw-bold">登入</h2>
+          </div>
+          <div class="modal-body px-5 pt-3 pb-7 pb-lg-8 text-gray-1">
+            <form action="#" class="mx-auto" style="max-width: 331px;">
+              <label class="mb-2 d-block" for="userEmail">信箱</label>
+              <input class="form-control py-3 px-4 mb-4 mb-lg-5 border border-white rounded-1 bg-dark w-100 text-white" type="email" name="userEmail" id="userEmail" placeholder="請輸入信箱" required>
+              <label class="mb-2 d-block" for="userPassword">密碼</label>
+              <input class="form-control py-3 px-4 mb-4 mb-lg-5 border border-white rounded-1 bg-dark w-100 text-white" type="password" name="userPassword" id="userPassword" placeholder="請輸入密碼" required>
+              <button class="btn btn-gradient-x w-100 fs-4 text-white mb-5 mb-lg-8" type="submit">登入</button>
+              <p class="mb-4 text-center position-relative">
+                <span class="px-3 bg-light position-relative z-index-10">其他登入方式</span>
+                <span class="divider"></span>
+              </p>
+              <a class="w-100 px-6 btn btn-outline-white rounded-1 mb-4 mb-lg-5 d-lg-flex justify-content-start" href="#">
+                <img class="me-6 me-lg-0" src="./assets/images/icon_fb.svg" alt="fb登入圖示" width="24px">
+                <span class="flex-grow-1 me-5">Facebook 登入</span>
+              </a>
+              <a class="w-100 px-6 btn btn-outline-white rounded-1 d-lg-flex justify-content-start" href="#">
+                <img class="me-6 me-lg-0" src="./assets/images/icon_google.svg" alt="google登入圖示" width="24px">
+                <span class="flex-grow-1 me-5">Google 登入</span>
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
 <main class="header-space">
   <!-- banner -->
   <div class="mx-0 row justify-content-center align-items-center banner">
@@ -398,3 +485,16 @@ engine: ejs
 
 </main>
 
+
+
+    <footer class="bg-gray-3">
+  <p class="font-Azeret lh-sm text-909 text-center py-4 py-md-5 fs-1 fs-md-3">Coding Home &copy; 2022 All Rights Reserved</p>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>課程報名 - 2022 Python 全攻略｜從入門到實務 - Coding Home 程式家教</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
+    <!-- css style -->
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <!-- navbar -->
+<header class="bg-light nav-decorBorder fixed-top w-100">
+  <nav class="navbar navbar-expand-md justify-content-between p-0">
+    <div class="container">
+      <!-- logo -->
+      <h2 class="overflow-hidden fs-1" style="max-width: 175px;">
+        <a class="d-block py-5 text-nowrap text-decoration-none" href="./index.html">
+          <img class="d-md-inline-block d-none" src="./assets/images/logo.svg" alt="big logo" height="42px">
+          <img class="d-inline-block d-md-none" src="./assets/images/logo2.svg" alt="small logo" height="24px">
+          <span class="d-inline-block text-indent-101 fs-2">Coding Home 程式家教</span>
+        </a>
+      </h2>
+      <!-- toggle btn -->
+      <a class="d-block d-md-none text-decoration-none" data-bs-toggle="collapse" data-bs-target="#collapseNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-icons text-primary align-top">drag_handle</span>
+      </a>
+      <!-- collapse nav -->
+      <div class="collapse navbar-collapse bg-light w-100 position-absolute position-md-unset top-100 start-0 justify-content-end z-index-10" id="collapseNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link d-block text-center fs-4 px-5 py-4 text-white active" aria-current="page" href="./index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-block text-center fs-4 px-5 py-4 text-white" href="./courses.html">課程介紹</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-block text-center fs-4 px-5 py-4 text-white d-md-flex align-items-center" href="#login" data-bs-toggle="modal">
+              <span class="material-icons fs-5 me-2 align-middle">account_circle</span>
+              登入
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- login modal -->
+<div class="modal fade" id="login" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered" style="max-width: 636px;">
+    <div class="modal-content bg-light border border-white rounded-0">
+      <div class="modal-header py-4 px-5 py-lg-5 rounded-0 border-bottom-0 d-block position-relative">
+        <button class="bg-light border-0 d-block text-end w-100 w-lg-auto position-lg-absolute end-0 top-50 translate-middle-lg" type="button" data-bs-dismiss="modal" aria-label="Close">
+          <span class="material-icons text-white bg-light align-top">close</span>
+        </button>
+        <h2 class="modal-title text-white text-center fs-7 fw-bold">登入</h2>
+      </div>
+      <div class="modal-body px-5 pt-3 pb-7 pb-lg-8 text-gray-1">
+        <form action="#" class="mx-auto" style="max-width: 331px;">
+          <label class="mb-2 d-block" for="userEmail">信箱</label>
+          <input class="form-control py-3 px-4 mb-4 mb-lg-5 border border-white rounded-1 bg-dark w-100 text-white" type="email" name="userEmail" id="userEmail" placeholder="請輸入信箱" required>
+          <label class="mb-2 d-block" for="userPassword">密碼</label>
+          <input class="form-control py-3 px-4 mb-4 mb-lg-5 border border-white rounded-1 bg-dark w-100 text-white" type="password" name="userPassword" id="userPassword" placeholder="請輸入密碼" required>
+          <button class="btn btn-gradient-x w-100 fs-4 text-white mb-5 mb-lg-8" type="submit">登入</button>
+          <p class="mb-4 text-center position-relative">
+            <span class="px-3 bg-light position-relative z-index-10">其他登入方式</span>
+            <span class="divider"></span>
+          </p>
+          <a class="w-100 px-6 btn btn-outline-white rounded-1 mb-4 mb-lg-5 d-lg-flex justify-content-start" href="#">
+            <img class="me-6 me-lg-0" src="./assets/images/icon_fb.svg" alt="fb登入圖示" width="24px">
+            <span class="flex-grow-1 me-5">Facebook 登入</span>
+          </a>
+          <a class="w-100 px-6 btn btn-outline-white rounded-1 d-lg-flex justify-content-start" href="#">
+            <img class="me-6 me-lg-0" src="./assets/images/icon_google.svg" alt="google登入圖示" width="24px">
+            <span class="flex-grow-1 me-5">Google 登入</span>
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="bg-dark d-flex flex-column vh-100">
+      <main class="bg-black flex-grow-1">
+      <!-- progress bar -->
+<div class="header-space">
+  <div class="bg-black bg-md-dark">
+    <div class="container pt-5 pb-4 pb-1">
+      <div class="row justify-content-center">
+        <div class="col-9 col-md-7 timeline "></div>
+      </div>
+      <div class="row">
+        <div class="col-3 col-md-5 timeline-pointer step1 active ">
+          <p class="text-center pt-5">課程報名</p>
+        </div>
+        <div class="col-6 col-md-2 timeline-pointer step2 ">
+          <p class="text-center pt-5">信用卡付款</p>
+        </div>
+        <div class="col-3 col-md-5 timeline-pointer step3">
+          <p class="text-center pt-5">付款成功</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+<div class="container pb-7 pt-3 pt-md-6 pt-lg-8">
+  <div class="row g-0 justify-content-center">
+    <!-- course info -->
+    <div class="col-12 col-md-8 col-lg-4 position-relative mb-7 mb-lg-0 negative-margin">
+      <div class="bg-light p-5 py-xl-8 px-xl-6 triangle position-lg-absolute top-50 translate-middle-lg-y">
+        <img class="avatar border border-3 border-primary d-block mx-auto mb-4 mb-xl-5" src="./assets/images/teacher01.jpg" alt="老師照片">
+        <h2 class="lh-base text-center text-white fw-bold fs-3 fs-xl-4 mb-3 mb-xl-1">2022 Python 全攻略｜從入門到實務</h2>
+        <h3 class="lh-base text-center text-primary fw-normal fs-3 mb-3">前端語言</h3>
+        <p class="text-white">帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。</p>
+      </div>
+    </div>
+    <!-- register info -->
+    <div class="col-12 col-lg-8">
+      <div class="bg-dark p-5 px-md-6 py-xl-8">
+        <h1 class="lh-base fw-bold fs-7 mb-5 mb-xl-8 text-white text-center">課程報名</h1>
+        <div class="ms-auto register-container">
+          <!-- how to pay -->
+          <h2 class="lh-base fw-bold fs-4 mb-4 mb-xl-2 text-white text-center text-lg-start">選擇付款方式</h2>
+          <ul class="list-unstyled mb-6 row row-cols-2 row-cols-md-4 gx-3 gx-lg-4 justify-content-lg-start">
+            <li class="col w-lg-auto">
+              <button class="w-100 btn btn-outline-white btn-outline-white--active p-4 px-xl-5 px-xxl-6 mb-3 mb-md-0" type="button">信用卡付款</button>
+            </li>
+            <li class="col w-lg-auto">
+              <button class="w-100 btn btn-outline-white p-4 px-xl-5 px-xxl-6 mb-3 mb-md-0" type="button">超商繳款</button>
+            </li>
+            <li class="col w-lg-auto">
+              <button class="w-100 btn btn-outline-white p-4 px-xl-5 px-xxl-6" type="button">ATM轉帳</button>
+            </li>
+            <li class="col w-lg-auto">
+              <button class="w-100 btn btn-outline-white p-4 px-xl-5 px-xxl-6" type="button">12期分期付款</button>
+            </li>
+          </ul>
+          <!-- order form -->
+          <h2 class="lh-base fw-bold fs-4 mb-4 mb-xl-5 text-white text-center text-lg-start">訂單資訊</h2>
+          <form action="./checkout-payment.html">
+            <div class="d-lg-flex">
+              <label class="d-block w-100 text-gray-1 mb-4 me-lg-6 me-xxl-8" for="reg-username">
+                <span class="d-block mb-3">姓名</span>
+                <input class="form-control w-100 text-white bg-dark py-3 px-4 border border-white rounded-1" type="text" name="reg-username" id="reg-username" placeholder="請輸入姓名" autofocus>
+              </label>
+              <label class="d-block w-100 text-gray-1 mb-4" for="reg-phone">
+                <span class="d-block mb-3">電話</span>
+                <input class="form-control w-100 text-white bg-dark py-3 px-4 border border-white rounded-1" type="tel" name="reg-phone" id="reg-phone" placeholder="請輸入電話號碼">
+              </label>
+            </div>
+            <label class="d-block w-100 text-gray-1 mb-4" for="reg-email">
+              <span class="d-block mb-3">Email</span>
+              <input class="form-control w-100 text-white bg-dark py-3 px-4 border border-white rounded-1" type="email" name="reg-email" id="reg-email" placeholder="請輸入Email">
+            </label>
+            <div class="d-lg-flex">
+              <div class="w-100 me-lg-6 me-xxl-8">
+                <label class="d-block w-100 text-gray-1 mb-3" for="reg-courseSelect">課程</label>
+                <div class="select-appearance"></div>
+                <select class="form-control w-100 text-white bg-dark py-3 px-4 border border-white rounded-1 mb-4" name="reg-courseSelect" id="reg-courseSelect">
+                  <option value="1">1堂50分鐘</option>
+                  <option value="3">3堂50分鐘</option>
+                  <option value="10" selected>10堂50分鐘</option>
+                  <option value="20">20堂50分鐘</option>
+                  <option value="custom">客製化課程/專案製作</option>
+                </select>
+              </div>
+              <label class="d-block w-100 mb-4" for="reg-datepicker">
+                <span class="d-block text-gray-1 mb-3">想預約的日期</span>
+                <input class="form-control w-100 text-white bg-dark py-3 px-4 border border-white rounded-1" type="text" name="reg-datepicker" id="reg-datepicker" placeholder="請選擇日期" autocomplete="off">
+              </label>
+            </div>
+            <label class="d-block w-100 text-gray-1" for="reg-address">
+              <span class="d-block mb-3">上課地點</span>
+              <input class="form-control w-100 text-white bg-dark py-3 px-4 border border-white rounded-1 mb-5" type="text" name="reg-address" id="reg-address" placeholder="請輸入上課地點">
+            </label>
+            <div class="d-lg-flex justify-content-between align-items-center">
+              <p class="font-Azeret fs-4 text-white mb-5 mb-lg-0">NT$1600</p>
+              <button class="btn btn-gradient-x text-white w-100 w-lg-auto" type="submit">前往結帳</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      </main>
+      <footer class="bg-gray-3">
+  <p class="font-Azeret lh-sm text-909 text-center py-4 py-md-5 fs-1 fs-md-3">Coding Home &copy; 2022 All Rights Reserved</p>
+</footer>
+
+    </div>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/locales/zh-TW.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

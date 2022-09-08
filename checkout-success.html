@@ -1,4 +1,25 @@
-<!-- navbar -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>付款成功 - Coding Home 程式家教</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
+    <!-- css style -->
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <!-- navbar -->
 <header class="bg-light nav-decorBorder fixed-top w-100">
   <nav class="navbar navbar-expand-md justify-content-between p-0">
     <div class="container">
@@ -68,3 +89,56 @@
     </div>
   </div>
 </div>
+
+    <div class="bg-dark d-flex flex-column vh-100">
+      <main class="bg-black flex-grow-1">
+      <!-- progress bar -->
+<div class="header-space">
+  <div class="bg-black bg-md-dark">
+    <div class="container pt-5 pb-4 pb-1">
+      <div class="row justify-content-center">
+        <div class="col-9 col-md-7 timeline "></div>
+      </div>
+      <div class="row">
+        <div class="col-3 col-md-5 timeline-pointer step1 active ">
+          <p class="text-center pt-5">課程報名</p>
+        </div>
+        <div class="col-6 col-md-2 timeline-pointer step2 ">
+          <p class="text-center pt-5">信用卡付款</p>
+        </div>
+        <div class="col-3 col-md-5 timeline-pointer step3">
+          <p class="text-center pt-5">付款成功</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+<div class="container py-6 py-md-8">
+  <div class="row g-0 justify-content-center">
+    <div class="col-12 col-md-6 col-xl-4 bg-dark">
+      <div class="p-5 py-md-8 px-md-6 text-white">
+        <h1 class="lh-base fw-bold fs-7 mb-5 mb-lg-8 d-flex justify-content-center align-items-center">
+          <span class="material-icons-outlined fs-10 me-4 text-primary">verified</span>完成訂購
+        </h1>
+        <p class="mb-5 mb-lg-6">恭喜您已完成<span class="fw-bold">「2022 Python 全攻略｜從入門到實務」</span>課程報名，請注意郵件訊息，家教老師將與您聯繫！</p>
+        <a href="./courses.html" class="btn btn-gradient-x d-block fit-content mx-auto text-white">看看其他課程</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </main>
+      <footer class="bg-gray-3">
+  <p class="font-Azeret lh-sm text-909 text-center py-4 py-md-5 fs-1 fs-md-3">Coding Home &copy; 2022 All Rights Reserved</p>
+</footer>
+
+    </div>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/locales/zh-TW.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
