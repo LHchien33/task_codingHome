@@ -7,15 +7,7 @@ if (elem) {
     autohide: true,
     language: 'zh-TW'
   });
-} // 課程列表的 btn
-// if (elem){
-//   const courseFilterSwiper = new Swiper('.course-filter-swiper', {
-//     slidesPerView: 'auto',
-//     spaceBetween : 16,
-//     freeMode: true,
-//   });
-// }
-
+}
 
 var recommendSwiper = new Swiper('.recommend-swiper', {
   effect: 'fade',
@@ -51,6 +43,16 @@ var languageSwiper = new Swiper('.language-swiper', {
     },
     992: {
       spaceBetween: 16
+    }
+  }
+});
+var courseFilterSwiper = new Swiper('.course-filter-swiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 16,
+  freeMode: true,
+  breakpoints: {
+    1440: {
+      slidesPerView: 6
     }
   }
 });
