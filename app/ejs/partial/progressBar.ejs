@@ -1,0 +1,21 @@
+<!-- progress bar -->
+<div class="header-space">
+  <div class="bg-black bg-md-dark">
+    <div class="container pt-5 pb-4 pb-1">
+      <div class="row justify-content-center">
+        <div class="col-9 col-md-7 timeline <%= current === 'payment' ? 'active-step2' : '' %>"></div>
+      </div>
+      <div class="row">
+        <div class="col-3 col-md-5 timeline-pointer step1 active <%= current === 'payment' ? 'checked' : '' %>">
+          <p class="text-center pt-5">課程報名</p>
+        </div>
+        <div class="col-6 col-md-2 timeline-pointer step2 <%= current === 'payment' ? 'active' : '' %>">
+          <p class="text-center pt-5">信用卡付款</p>
+        </div>
+        <div class="col-3 col-md-5 timeline-pointer step3">
+          <p class="text-center pt-5">付款成功</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

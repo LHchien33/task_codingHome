@@ -1,0 +1,164 @@
+
+.banner{
+  background-image: url(../images/bg_home_mobile.jpg);
+  height: calc(100vh - 72px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @include media-breakpoint-up(md){
+    background-image: url(../images/bg_home.jpg);
+    height: calc(100vh - 90px);
+  }
+}
+// section 4 language - start -
+.language-swiper{
+  .swiper-wrapper{
+    transition-timing-function: linear;
+  }
+}
+// section 4 language - end -
+// section 6 teaching method - start -
+.bg-gray-2-hover{
+  &:hover{
+    .material-icons{
+      background-image: $gradient-y;
+      color: transparent !important;
+    }
+  }
+}
+
+.height-xxl-615{
+  @include media-breakpoint-up(xxl){
+    height: 615px;
+  }
+}
+
+.backdrop-filter-brightness{
+  backdrop-filter: brightness(20%);
+  transition: backdrop-filter .1s;
+  @include media-breakpoint-up(xl){
+    .decor-line{
+      &::after{
+        background-color: $white;
+        transition: all .2s;
+      }
+    }
+    .opacity-6{
+      opacity: 0.6;
+    }
+  }
+  &:hover{
+    backdrop-filter: brightness(90%);
+    .material-icons{
+      color: $primary !important;
+    }
+    .decor-line{
+      &::after{
+        width: 70px;
+        background-color: $primary;
+      }
+    }
+    .opacity-1{
+      opacity: 1;
+    }
+  }
+}
+// section 6 teaching method - end -
+// section 7 articles - start -
+.articles-hover{
+  &:hover{
+    .cube-32{
+      border-color: $primary !important;
+    }
+  }
+}
+// section 7 articles - end -
+// section 8 recommend - start -
+.bg-recommend{
+  @include media-breakpoint-up(md){
+    background-image: url(../images/bg_share.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+:root{
+  --swiper-theme-color: #{$primary};
+  --swiper-pagination-bullet-inactive-color:  #{$primary};
+  --swiper-pagination-bullet-inactive-opacity: 1;
+}
+
+.recommend-swiper{
+  .swiper-pagination{
+    width: fit-content;
+    position: unset;
+    &-bullet{
+      transition: width .2s;
+      &-active{
+        width: 16px;
+        border-radius: 4px;
+      }
+    }
+  }
+  .swiper-button-prev, .swiper-button-next{
+    position: unset;
+    height: fit-content;
+    margin: 0;
+    &::after{
+      content: "";
+      font-family: 'Material Icons';
+      font-size: 20px;
+    }
+  }
+  .swiper-button-prev{
+    margin-right: 8px;
+    &::after{
+      content: "\f1e6";
+    }
+  }
+  .swiper-button-next{
+    margin-left: 8px;
+    &::after{
+      content: "\f1df";
+    }
+  }
+}
+
+.text-swiper{
+  color: #494755;
+}
+
+.recommend-img{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 213px;
+  margin-left: 8px;
+  position: relative;
+  &::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #7C7E77;
+    border-radius: $border-radius-lg;
+    position: absolute;
+    top: 8px;
+    left: -8px;
+    z-index: -1;
+  }
+  @include media-breakpoint-up (md){
+    height: 280px;
+  }
+  @include media-breakpoint-up (xxl){
+    height: 381px;
+  }
+}
+
+@include media-breakpoint-up (md){
+  .offset-md-285{
+    margin-left: 28.5%;
+  }
+}
+// section 8 recommend - end -

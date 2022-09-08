@@ -1,0 +1,53 @@
+
+.select-appearance{
+  position: relative;
+  &::after{
+    font-family: 'Material Icons';
+    content: "\e5cf";
+    display: inline-block;
+    color: $white;
+    margin-right: 16px;
+    font-size: 16px;
+    position: absolute;
+    translate: 0 -50%;
+    top: 20px;
+    right: 0;
+  }
+}
+
+.register-container{
+  @include media-breakpoint-up (lg){
+    max-width: 90%;
+  }
+  @include media-breakpoint-up (xxl){
+    max-width: 710px;
+  }
+}
+
+.triangle{
+  &::after{
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    border-style: solid;
+    border-width: 12px;
+    border-color: $light transparent transparent transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    translate: -50% 0;
+    @include media-breakpoint-up (lg){
+      border-color: transparent transparent transparent $light;
+      top: 50%;
+      left: 100%;
+      translate: 0 -50%;
+    }
+  }
+}
+
+.negative-margin{
+  @include media-breakpoint-up (lg){
+    margin-right: -5.5%;
+  }
+}

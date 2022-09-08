@@ -1,0 +1,28 @@
+
+.nav-decorBorder{
+  &::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-image: $gradient-90;
+    position: absolute;
+    top: 70px;
+    @include media-breakpoint-up(md) {
+      top: 88px;
+    }
+  }
+}
+// login modal
+.divider{
+  &::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid $gray-1;
+  }
+}
